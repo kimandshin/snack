@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snack Pricing</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8f8f3;
+      color: #1f1f1f;
+      line-height: 1.5;
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+    }
+
+    .top-label {
+      text-align: center;
+      color: #8e8e8e;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 44px;
+      margin-bottom: 18px;
+      font-weight: 800;
+    }
+
+    .sub {
+      text-align: center;
+      font-size: 18px;
+      color: #666;
+      max-width: 760px;
+      margin: 0 auto 50px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ece8dc;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      min-height: 620px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #eef3d0;
+      color: #556000;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 7px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      width: fit-content;
+    }
+
+    .plan-title {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .plan-subtitle {
+      color: #777;
+      font-size: 19px;
+      margin-bottom: 24px;
+    }
+
+    .price {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .price-note {
+      color: #666;
+      margin-bottom: 28px;
+      font-size: 16px;
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #777;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .features {
+      list-style: none;
+      margin-bottom: 26px;
+    }
+
+    .features li {
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 17px;
+    }
+
+    .features li strong {
+      display: block;
+      color: #222;
+      margin-bottom: 2px;
+    }
+
+    .extra-box {
+      margin-top: auto;
+      background: #faf9f4;
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid #eee7d4;
+    }
+
+    .extra-box h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .extra-box p {
+      color: #666;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .extra-list {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .extra-list li {
+      padding: 6px 0;
+      font-size: 15px;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 22px;
+      text-align: center;
+      background: #d9dc8f;
+      color: #222;
+      text-decoration: none;
+      padding: 14px 18px;
+      border-radius: 14px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+      background: #d0d47c;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 46px;
+      color: #666;
+      font-size: 18px;
+    }
+
+    .contact strong {
+      color: #222;
+    }
+
+    @media (max-width: 980px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        min-height: auto;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .plan-title {
+        font-size: 34px;
+      }
+
+      .price {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top-label">Pricing</div>
+    <h1>Simple Snack Service Plans</h1>
+    <p class="sub">
+      Choose the snack setup that matches your team size and office needs.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <span class="badge">Starter</span>
+        <div class="plan-title">Basic</div>
+        <div class="plan-subtitle">1–50 people</div>
+        <div class="price">$6 <span style="font-size:18px; font-weight:500;">per person / day</span></div>
+        <div class="price-note">Great for smaller teams that want simple pantry support.</div>
+
+        <div class="section-title">Included</div>
+        <ul class="features">
+          <li><strong>Basic Snacks</strong>Simple snack options for everyday office needs.</li>
+          <li><strong>Asian Basic</strong>Basic Asian snack selection.</li>
+          <li><strong>Basic Beverages</strong>Starter-level drink assortment.</li>
+        </ul>
+
+        <div class="extra-box">
+          <h3>Additional Options</h3>
+          <ul class="extra-list">
+            <li>Fruits</li>
+            <li>Coffee</li>
+          </ul>
+        </div>
+
+        <a class="cta" href="tel:14089052607">Get a Quick Quote</a>
+      </div>
+
+      <div class="card">
+        <span class="badge">Standard</span>
+        <div class="plan-title">Standard</div>
+        <div class="plan-subtitle">50–100 people / up to 200</div>
+        <div class="price">$8</div>
+        <div class="price-note">A balanced option for growing teams that want more variety.</div>
+
+        <div class="section-title">Included</div>
+        <ul class="features">
+          <li><strong>Energy Drinks</strong>Added beverage variety for active teams.</li>
+          <li><strong>Granola Bars</strong>Convenient grab-and-go snack options.</li>
+        </ul>
+
+        <div class="extra-box">
+          <h3>Good for</h3>
+          <p>Offices that want better variety without going fully custom.</p>
+        </div>
+
+        <a class="cta" href="tel:14089052607">Get a Quick Quote</a>
+      </div>
+
+      <div class="card">
+        <span class="badge">Premium</span>
+        <div class="plan-title">Premium</div>
+        <div class="plan-subtitle">100–500+ people</div>
+        <div class="price">$10</div>
+        <div class="price-note">Custom pantry experience for larger teams and premium spaces.</div>
+
+        <div class="section-title">Included</div>
+        <ul class="features">
+          <li><strong>Ramen Bar</strong>Popular hot snack station option.</li>
+          <li><strong>Ice Cream</strong>Premium frozen treat option.</li>
+          <li><strong>Tea Bar</strong>Expanded drink experience.</li>
+        </ul>
+
+        <div class="extra-box">
+          <h3>Custom Setup</h3>
+          <p>Custom package available.</p>
+          <p><strong>Estimated monthly budget:</strong> Check / around 100k noted in your draft</p>
+          <p><strong>Contact:</strong> Scotty — (408) 905-2607</p>
+        </div>
+
+        <a class="cta" href="tel:14089052607">Call Scotty</a>
+      </div>
+    </div>
+
+    <div class="contact">
+      Need a custom office pantry plan? <strong>Call Scotty: (408) 905-2607</strong>
+    </div>
+  </div>
+</body>
+</html>
